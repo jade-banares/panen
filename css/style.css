@@ -5,7 +5,7 @@
 body{
 	background: black;
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: normal;
 	color: #fff;
 	margin: 0;
@@ -22,6 +22,13 @@ strong{
 }
 h1{
 	font-size: 32px;
+}
+h1.main-title, h2.main-title{
+	color: rgb(200, 22, 33)
+}
+.entry-content h3{
+	text-align: left;
+	color: rgb(200, 22, 33)
 }
 h2{
 	font-size: 26px;
@@ -53,7 +60,7 @@ ol{
 	text-align: left;
 	padding-left: 1em;
 }
-ul{
+ul.table-ul{
 	list-style: none;
 }
 a{
@@ -74,6 +81,7 @@ a{
 .text-center{
 	text-align: center;
 }
+
 .svg-icon{
 	display: inline-block;
     fill: currentColor;
@@ -436,4 +444,31 @@ table td{
 	#header nav a{
 		font-size: 16px;
 	}
+}
+
+.fixed-footer{
+	display:flex;
+	justify-content:space-around;
+	position:fixed;
+	background:radial-gradient(circle 214px at 46.5% 54.2%,#c81623 0,#000 96%);
+	padding:5px 0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:99
+}.fixed-footer a{
+	flex-basis:calc((100% - 15px*6)/ 5);
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	color:#fff;
+	max-width:75px;
+	font-size:12px}
+.fixed-footer .center{
+	transform:scale(1.5) translateY(-5px);
+	background:center no-repeat;
+	background-size:contain;
+	background-color:inherit;
+	border-radius:50%
 }
